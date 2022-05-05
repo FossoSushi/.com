@@ -151,7 +151,7 @@ body {
   justify-content: space-around;
 }
 
-/* Стундія */
+/* меню */
 .rolu__img {
   display: block;
   width: 130px;
@@ -160,4 +160,28 @@ body {
 
 .rolu__title {
   margin-bottom: 5px;
+}
+
+.cap__link {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.cap__list {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid gold;
+  margin-bottom: 10px;
+}
+
+.drinks__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drinks__title {
+  width: 70px;
 }/*# sourceMappingURL=main.css.map */

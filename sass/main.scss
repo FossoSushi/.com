@@ -1,13 +1,15 @@
 /* oсновні стилі */
 @import "./variables";
 @import "./basic-styles";
-/* Стундія */
+/* меню */
 @import "./_menu.scss/rolu";
 @import "./_menu.scss/futomaki";
 @import "./_menu.scss/maki";
 @import "./_menu.scss/hot-rolu";
-@import ".//_menu.scss/nigiri";
-
+@import "./_menu.scss/nigiri";
+// головна
+@import "./_golovna.scss/cap";
+@import "./_golovna.scss/napoy";
 
 
 
