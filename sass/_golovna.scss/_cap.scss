@@ -1,9 +1,14 @@
 .cap__link {
+    position: relative;
+    padding: 10px 0;
     text-decoration: none;
     display: block;
     color: #fff;
     font-size: 15px;
     line-height: 1.2;
+    &:focus {
+        color: gold;
+    }
 }
 .cap__list {
     display: flex;
@@ -11,4 +16,19 @@
     border-bottom: 1px solid gold;
     margin-bottom: 10px;
     
+}
+.site-navigation__active::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 7px;
+    background: gold;
+    border-radius: 2px;
+    display: flex;
+    top: 97%;
+    
+}
+.active {
+  color: gold;
 }
