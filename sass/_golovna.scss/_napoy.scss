@@ -1,7 +1,18 @@
 .drinks__item {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .drinks__title {
-    width: 70px;
+   
+    position: absolute;
+    font-size: 40px;
+    font-family: "Oswald";
+    align-items: center;
+    margin: 40px 0;
+    background-color: none;
+}
+.drinks__boxs {
+    display: flex;
+    justify-content: center;
 }

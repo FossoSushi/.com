@@ -72,7 +72,11 @@ ul {
   margin: 40px 0;
 }
 
-h2 {
+.rolu__title,
+.maki-rolu__title,
+.hot-rolu__title,
+.futomaki-rolu__title,
+.nigiri-rolu__title {
   margin-top: 10px;
   font-family: "Tapestry";
   background-color: #fcba03;
@@ -180,8 +184,19 @@ body {
 .drinks__item {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .drinks__title {
-  width: 70px;
+  position: absolute;
+  font-size: 40px;
+  font-family: "Oswald";
+  align-items: center;
+  margin: 40px 0;
+  background-color: none;
+}
+
+.drinks__boxs {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
