@@ -60,10 +60,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  padding: 50px;
-}
-
 .menu__title {
   position: absolute;
   font-size: 40px;
@@ -155,6 +151,11 @@ body {
   justify-content: space-around;
 }
 
+a {
+  text-decoration: none;
+  color: gold;
+}
+
 /* меню */
 .rolu__img {
   display: block;
@@ -220,4 +221,8 @@ body {
 .drinks__boxs {
   display: flex;
   justify-content: center;
+}
+
+.container {
+  border-top: 1px solid gold;
 }/*# sourceMappingURL=main.css.map */

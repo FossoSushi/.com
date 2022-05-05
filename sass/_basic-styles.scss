@@ -66,9 +66,7 @@ ul {
     list-style: none;
 }
 
-.container {
-    padding: 50px;
-}
+
 .menu__title {
     position: absolute;
     font-size: 40px;
@@ -146,4 +144,8 @@ body {
 .cards--flex {
     flex-wrap: wrap;
     justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: gold;
 }
