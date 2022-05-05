@@ -73,6 +73,7 @@ ul {
 }
 
 h2 {
+  margin-top: 10px;
   font-family: "Tapestry";
   background-color: #fcba03;
   padding: 2px;
@@ -101,7 +102,21 @@ p {
 
 .box {
   padding: 5px;
-  width: 140px;
+}
+@media screen and (max-width: 374px) {
+  .box {
+    width: 140px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .box {
+    width: 170px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box {
+    width: 300px;
+  }
 }
 
 .menu {
