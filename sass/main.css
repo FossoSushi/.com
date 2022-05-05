@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /* oсновні стилі */
+/* Головний фон сторінки #FFFFFF */
+/* Головний колір тексту #212121 */
+/* Другорядний колір тексту #757575 */
+/* Фон футера #2F303A */
+/* Фон секції послуги background: #2F303A; */
+/* .............................................................................. */
 /* Спільні стилі для всіх сторінок ................................................ */
 html {
   box-sizing: border-box;
@@ -59,19 +65,25 @@ ul {
 }
 
 .menu__title {
-  color: gold;
+  position: absolute;
+  font-size: 40px;
+  font-family: "Oswald";
   align-items: center;
-  margin: 15px 0;
+  margin: 40px 0;
 }
 
 h2 {
-  margin: 10px 0;
-  font-size: small;
+  font-family: "Tapestry";
+  background-color: #fcba03;
+  padding: 2px;
+  font-size: 17px;
 }
 
 h3 {
+  font-family: "Tapestry";
   margin: 5px 0;
   font-size: small;
+  color: whitesmoke;
 }
 
 li {
@@ -81,8 +93,10 @@ li {
 }
 
 p {
+  font-family: "Lobster";
   margin: 3px 0;
-  font-size: small;
+  font-size: smaller;
+  color: darkgrey;
 }
 
 .box {
@@ -98,8 +112,7 @@ p {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 section {
@@ -120,6 +133,7 @@ body {
 
 .cards--flex {
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Стундія */
@@ -127,4 +141,8 @@ body {
   display: block;
   width: 130px;
   height: 130px;
+}
+
+.rolu__title {
+  margin-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */

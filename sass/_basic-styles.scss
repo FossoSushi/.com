@@ -70,19 +70,25 @@ ul {
     padding: 50px;
 }
 .menu__title {
-
-    color: gold;
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Oswald';
     align-items: center;
-    margin: 15px 0;
+    margin: 40px 0;
 }
 h2 {
-    margin: 10px 0;
-        font-size: small;
+    font-family: 'Tapestry';
+    background-color: #fcba03;
+    padding: 2px;
+        font-size: 17px;
+        
 }
 
 h3 {
+    font-family: 'Tapestry';
     margin: 5px 0;
         font-size: small;
+        color: whitesmoke ;
 }
 
 li {
@@ -91,8 +97,10 @@ li {
         font-size: small;
 }
 p {
+    font-family: 'Lobster';
     margin: 3px 0;
-        font-size: small;
+        font-size: smaller;
+        color: darkgrey;
 }
 .box {
     padding: 5px;
@@ -106,8 +114,7 @@ p {
 }
 .flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 section {
     width: 100%;
@@ -125,4 +132,5 @@ body {
 }
 .cards--flex {
     flex-wrap: wrap;
+    justify-content: space-around;
 }
