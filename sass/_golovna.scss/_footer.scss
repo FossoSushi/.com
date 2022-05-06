@@ -1,4 +1,11 @@
 
 .container {
   border-top: 1px solid gold;
+  text-align: center;
+}
+
+.footer__instnetwork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
