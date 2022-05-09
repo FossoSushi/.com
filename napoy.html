@@ -18,26 +18,39 @@
 
 <body>
     <header class="cap">
-        <nav class="cap__nav">
-            <ul class="cap__list">
-                <li class="cap__item">
-                    <a class="cap__link  " href="./index.html">Головна</a>
-                </li>
-                <li class="cap__item">
-                    <a class="cap__link" href="./menu.html">Роли</a>
-                </li>
-        
-                <li class="cap__item">
-                    <a class="cap__link" href="./sety.html">Сети</a>
-                </li>
-                <li class="cap__item">
-                    <a class="cap__link site-navigation__active active" href="./napoy.html">Напої</a>
-                </li>
-                <li class="cap__item">
-                    <a class="cap__link" href="./akcczii.html">Акції</a>
-                </li>
-            </ul>
-        </nav>
+        <a class="cap__logo" href="./index.html">TU TAJ</a>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-btn>
+            <svg class="cap__svg" width="24" height="16" aria-label="перемикач мобільного вікна">
+                <use class="icon-cross" href="images/symbol-defs.svg#icon-close"></use>
+                <use class="icon-menu" href="images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="menu-container-tel " id="menu-container-tel" data-menu>
+            <div class="menu-container__box">
+                <nav class="cap__nav">
+                    <ul class="cap__list">
+                        <li class="cap__item">
+                            <a class="cap__link" href="./index.html">Головна</a>
+                        </li>
+                        <li class="cap__item">
+                            <a class="cap__link" href="./menu.html">Роли</a>
+                        </li>
+    
+                        <li class="cap__item">
+                            <a class="cap__link" href="./sety.html">Сети</a>
+                        </li>
+                        <li class="cap__item">
+                            <a class="cap__link active" href="./napoy.html">Напої</a>
+                        </li>
+                        <li class="cap__item">
+                            <a class="cap__link" href="./akcczii.html">Акції</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+    
     </header>
     <section class="drinks" >
         <div class="drinks__box">
@@ -123,7 +136,7 @@
             </ul>
         </div>
     </footer>
-    
+    <script src="./js/menu.js"></script>
 <body>
 </body>
 
