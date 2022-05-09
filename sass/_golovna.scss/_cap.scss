@@ -13,6 +13,15 @@ header {
     border-bottom: 1px solid gold;
     margin-bottom: 10px;
 }
+.cap__corzina-svg {
+  fill: honeydew;
+  width: 25px;
+  height: 25px;
+}
+.cap-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
 .cap__logo {
     display: block;
     font-family: "Tapestry";

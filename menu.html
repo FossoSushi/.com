@@ -18,7 +18,14 @@
 
 <body>
     <header class="cap">
-        <a class="cap__logo" href="./index.html">TU TAJ</a>
+        <div class="cap-flex">
+            <a class="cap__logo" href="./index.html">TU TAJ</a>
+            <a class="cap__korzina" href="./corzina.html">
+                <svg class="cap__corzina-svg">
+                    <use class="icon-cross" href="images/symbol-defs.svg#icon-cart"></use>
+                </svg>
+            </a>
+        </div>
         <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-btn>
             <svg class="cap__svg" width="24" height="16" aria-label="перемикач мобільного вікна">
                 <use class="icon-cross" href="images/symbol-defs.svg#icon-close"></use>
@@ -240,20 +247,14 @@
                 </li>
             </ul>
             <address class="address">
-                <a class="address__maps" href="https://goo.gl/maps/EvbMrSn3d95Ezf188">м. Щецин, пр-т Леси
-                    Украинки,
-                    26
+                <a class="address__maps" href="https://goo.gl/maps/EvbMrSn3d95Ezf188">Szczecin 71-414 Pl. Kilińskiego 1,
+                    pawilon 11
                 </a>
             </address>
             <ul class="contacts">
                 <li class="contacts__item">
-                    <a class="contacts__link contacts__link--mail" href="mailto:info@devstudio.com">
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contacts__link contacts__link--tel" href="tel:+380961111111">
-                        +38 099 111 11 11
+                    <a class="contacts__link contacts__link--tel" href="tel:+48690107502">
+                        +486 90 10 75 02
                     </a>
                 </li>
             </ul>

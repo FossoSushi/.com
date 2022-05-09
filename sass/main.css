@@ -188,6 +188,17 @@ header {
   margin-bottom: 10px;
 }
 
+.cap__corzina-svg {
+  fill: honeydew;
+  width: 25px;
+  height: 25px;
+}
+
+.cap-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .cap__logo {
   display: block;
   font-family: "Tapestry";
@@ -381,4 +392,8 @@ header {
   background-color: #fcba03;
   padding: 2px;
   font-size: 17px;
+}
+
+.korzina__box {
+  min-height: 300px;
 }/*# sourceMappingURL=main.css.map */
