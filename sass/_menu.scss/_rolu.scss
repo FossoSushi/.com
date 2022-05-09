@@ -6,3 +6,6 @@
 .rolu__title {
     margin-bottom: 5px;
 }
+.rolu__item:not(:last-child) {
+    border-bottom: 1px solid slategrey;
+}

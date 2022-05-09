@@ -171,6 +171,26 @@ a {
   margin-bottom: 5px;
 }
 
+.rolu__item:not(:last-child) {
+  border-bottom: 1px solid slategrey;
+}
+
+.futomaki-rolu__item:not(:last-child) {
+  border-bottom: 1px solid slategrey;
+}
+
+.maki-rolu__item:not(:last-child) {
+  border-bottom: 1px solid slategrey;
+}
+
+.hot-rolu__item:not(:last-child) {
+  border-bottom: 1px solid slategrey;
+}
+
+.nigiri-rolu__item:not(:last-child) {
+  border-bottom: 1px solid slategrey;
+}
+
 .cap__link {
   padding: 10px 0;
   text-decoration: none;
@@ -192,6 +212,12 @@ header {
   fill: honeydew;
   width: 20px;
   height: 20px;
+}
+
+.cap__corzina-svg-dod {
+  fill: honeydew;
+  width: 15px;
+  height: 15px;
 }
 
 .cap-flex {
@@ -401,5 +427,15 @@ header {
 }
 
 .cap__corzina-svg.active {
+  fill: gold;
+}
+
+.corzina-btn {
+  border: none;
+  background-color: #000;
+  padding: 5px;
+}
+
+.icon-cross-dod {
   fill: gold;
 }/*# sourceMappingURL=main.css.map */
