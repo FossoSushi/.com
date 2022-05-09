@@ -175,7 +175,8 @@ a {
   border-bottom: 1px solid slategrey;
 }
 
-.futomaki-rolu__item:not(:last-child) {
+.futomaki-rolu__item:not(:last-child),
+.sety__item:not(:last-child) {
   border-bottom: 1px solid slategrey;
 }
 
