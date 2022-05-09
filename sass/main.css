@@ -80,7 +80,7 @@ ul {
   font-size: 17px;
 }
 
-h3 {
+h2 {
   font-family: "Tapestry";
   margin: 5px 0;
   font-size: small;
@@ -270,4 +270,34 @@ a {
 
 .contacts__link {
   font-size: 15px;
+}
+
+.sety__list-box {
+  width: 50%;
+}
+
+.sety__box {
+  width: 100%;
+}
+
+.sety__list {
+  display: flex;
+}
+
+.sety__title {
+  text-align: center;
+}
+
+.sety__title {
+  position: absolute;
+  font-size: 35px;
+  font-family: "Oswald";
+  align-items: center;
+  margin: 45px 0;
+  background-color: none;
+}
+
+.sety__boxs {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
