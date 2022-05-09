@@ -190,13 +190,14 @@ header {
 
 .cap__corzina-svg {
   fill: honeydew;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .cap-flex {
   display: flex;
   justify-content: space-evenly;
+  align-items: baseline;
 }
 
 .cap__logo {
@@ -205,6 +206,7 @@ header {
   font-size: 25px;
   margin-bottom: 5px;
   width: 50%;
+  color: honeydew;
 }
 
 .menu-container__box {
@@ -396,4 +398,8 @@ header {
 
 .korzina__box {
   min-height: 300px;
+}
+
+.cap__corzina-svg.active {
+  fill: gold;
 }/*# sourceMappingURL=main.css.map */
