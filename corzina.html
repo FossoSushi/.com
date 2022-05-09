@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>TU TAJ</title>
+    <link rel="icon" type="image/png" href="./images/insta.png" />
+</head>
+
+<body>
+    <header class="cap">
+        <div class="cap-flex">
+            <a class="cap__logo" href="./index.html">TU TAJ</a>
+            <a class="cap__korzina" href="./corzina.html">
+                <svg class="cap__corzina-svg">
+                    <use class="icon-cross" href="images/symbol-defs.svg#icon-cart"></use>
+                </svg>
+            </a>
+        </div>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-btn>
+            <svg class="cap__svg" width="24" height="16" aria-label="перемикач мобільного вікна">
+                <use class="icon-cross" href="images/symbol-defs.svg#icon-close"></use>
+                <use class="icon-menu" href="images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="menu-container-tel " id="menu-container-tel" data-menu>
+            <div class="menu-container__box">
+                <nav class="cap__nav">
+                    <ul class="cap__list">
+                        <li class="cap__item">
+                            <a class="cap__link " href="./index.html">Головна</a>
+                        </li>
+                        <li class="cap__item">
+                            <a class="cap__link" href="./menu.html">Роли</a>
+                        </li>
+
+                        <li class="cap__item">
+                            <a class="cap__link" href="./sety.html">Сети</a>
+                        </li>
+                        <li class="cap__item">
+                            <a class="cap__link" href="./napoy.html">Напої</a>
+                        </li>
+                        <li class="cap__item">
+                            <a class="cap__link active" href="./akcczii.html">Акції</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="korzina">
+        <div class="korzina__box">
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <ul class="footer__instnetwork">
+    
+                <li>
+                    <a class="footer__inst" href="https://www.instagram.com/sushi.szcz.ko/">
+                        <img src="./images/insta.jpg" alt="" width="30px">
+                    </a>
+                </li>
+            </ul>
+            <address class="address">
+                <a class="address__maps" href="https://goo.gl/maps/EvbMrSn3d95Ezf188">Szczecin 71-414 Pl. Kilińskiego 1,
+                    pawilon 11
+                </a>
+            </address>
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a class="contacts__link contacts__link--tel" href="tel:+48690107502">
+                        +486 90 10 75 02
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    </body>
+    
+    </html>
