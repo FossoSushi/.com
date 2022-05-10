@@ -204,6 +204,31 @@ a {
   color: gold;
 }
 
+.link-lang {
+  color: azure;
+  border-radius: 50%;
+  border: 1px solid gold;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1%;
+  left: 3%;
+}
+
+.link-lang .active {
+  color: gold;
+}
+
+.item-lang:first-child {
+  margin-right: 20px;
+}
+
+.lang {
+  display: flex;
+}
+
 header {
   border-bottom: 1px solid gold;
   margin-bottom: 10px;
