@@ -14,8 +14,7 @@
 
 }
 .info__box {
-    
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/golovna.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.1)),url(../../images/golovna.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,6 +24,17 @@
     justify-content: space-around;
     width: 320px;
     height: 560px;
+    @media screen and (min-width: 375px) {
+       width: 375px; 
+       height: 650px;
+    }
+    @media screen and (min-width: 425px) {
+        width: 425px; 
+        height: 700px;
+    }
+    @media screen and (min-width: 768px) {
+        
+    }
 }
 .contacts__link {
     font-size: 15px;
