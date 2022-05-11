@@ -450,6 +450,22 @@ footer {
   }
 }
 
+.info__ulublene-title {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: floralwhite;
+  background-color: goldenrod;
+}
+
+.ulublene__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
 .sety__list-box {
   width: 50%;
 }
