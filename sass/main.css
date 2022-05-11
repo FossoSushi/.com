@@ -37,16 +37,22 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 320px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
   .container {
-    width: 480px;
+    width: 375px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 425px) {
+  .container {
+    width: 425px;
+  }
+}
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -160,7 +166,6 @@ a {
 }
 
 .containers {
-  padding: 0 10px;
   padding-top: 60px;
 }
 
@@ -345,12 +350,10 @@ header {
 }
 
 .container {
-  border-top: 1px solid gold;
   text-align: center;
 }
 
 .footer__instnetwork {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,16 +367,41 @@ header {
   margin-top: 10px;
 }
 
+footer {
+  border-top: 1px solid gold;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
 .info__title {
-  margin-top: 250px;
+  padding: 10px 0;
+  position: absolute;
+  top: 250px;
+  left: 50px;
   text-align: center;
   width: 70%;
   font-size: 30px;
+  color: gold;
+  background-color: rgba(47, 48, 58, 0.4);
+  border-radius: 20px;
+}
+@media screen and (min-width: 375px) {
+  .info__title {
+    top: 300px;
+    left: 55px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .info__title {
+    top: 350px;
+    left: 65px;
+  }
 }
 @media screen and (min-width: 768px) {
   .info__title {
-    color: #fff;
     font-size: 40px;
+    top: 650px;
+    left: 115px;
   }
 }
 
@@ -388,32 +416,7 @@ header {
 }
 
 .info__box {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(../../images/golovna.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-position: 100%;
-  color: goldenrod;
-  display: flex;
   justify-content: space-around;
-  width: 100%;
-  height: 560px;
-}
-@media screen and (min-width: 375px) {
-  .info__box {
-    height: 650px;
-  }
-}
-@media screen and (min-width: 425px) {
-  .info__box {
-    height: 700px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .info__box {
-    height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(../../images/golovna-tabl.jpg);
-  }
 }
 
 .contacts__link {
@@ -426,6 +429,25 @@ header {
 
 .containers-golovna {
   padding-top: 52px;
+}
+
+.info__img {
+  width: 320px;
+}
+@media screen and (min-width: 375px) {
+  .info__img {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .info__img {
+    width: 425px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .info__img {
+    width: 768px;
+  }
 }
 
 .sety__list-box {
@@ -457,6 +479,12 @@ header {
 .sety__boxs {
   display: flex;
   justify-content: center;
+}
+
+.sety__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ackzc__title {

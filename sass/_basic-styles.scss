@@ -37,18 +37,24 @@ img {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 320px;
+}
+@media screen and (min-width: 375px) {
+   .container {
+        width: 375px;
+    }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 425px) {
     .container {
-        width: 480px;
+        width: 425px;
     }
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .container {
         width: 768px;
     }
@@ -153,6 +159,5 @@ a {
     color: gold;
 }
 .containers {
-    padding: 0 10px;
     padding-top: 60px;
 }
