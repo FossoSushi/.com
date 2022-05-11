@@ -137,7 +137,6 @@ section {
 }
 body {
     margin: 0;
-    padding: 10px;
     color: #fff;
     background-color: black;
     background-repeat: no-repeat;
@@ -152,4 +151,8 @@ body {
 a {
     text-decoration: none;
     color: gold;
+}
+.containers {
+    padding: 0 10px;
+    padding-top: 60px;
 }
