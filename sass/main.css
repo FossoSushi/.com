@@ -466,6 +466,11 @@ footer {
   padding: 20px 0;
 }
 
+.ulublene__text {
+  font-size: 15px;
+  font-family: serif;
+}
+
 .sety__list-box {
   width: 50%;
 }
