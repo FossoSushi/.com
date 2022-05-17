@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    &:not(:last-child) {
+        border-bottom: 1px solid slategrey;
+    }
+    
 }
 .drinks__title {
    

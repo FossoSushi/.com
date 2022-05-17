@@ -189,6 +189,12 @@ a {
   border-bottom: 1px solid slategrey;
 }
 
+.menu__price {
+  font-family: serif;
+  color: gold;
+  font-size: 13px;
+}
+
 .maki-rolu__item:not(:last-child) {
   border-bottom: 1px solid slategrey;
 }
@@ -333,6 +339,9 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+}
+.drinks__item:not(:last-child) {
+  border-bottom: 1px solid slategrey;
 }
 
 .drinks__title {
