@@ -20,12 +20,40 @@
     <header class="cap">
         <div class="cap-flex">
             <a class="cap__logo" href="./index.html">TU TAJ</a>
-            <a class="cap__korzina" href="./corzina.html">
+            <button data-modal-opens type="button" class="cart-btn-open">
                 <svg class="cap__corzina-svg">
                     <use class="icon-cross" href="images/symbol-defs.svg#icon-cart"></use>
                 </svg>
-                <span class="cart__quantity">0</span>
-            </a>
+                <span class="cart__quantity" tabindex="0">0</span>
+            </button>
+        </div>
+        <div data-modals class="backdrop is-hidden">
+            <div class="modal">
+                <button data-modal-closes class="modal__button" type="submit">
+                    <svg class="cap__svg" width="24" height="16" aria-label="перемикач мобільного вікна">
+                        <use class="icon-cross" href="images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <li class="sety__item">
+                    <article class="product">
+                        <img class="image-switch__img img" src="./images/pngwing.com.jpg" alt="" width="130">
+                        <div class="sety__box">
+                            <h2 class="sety-item__title">Класичний<br>40 szt</h2>
+                            <p class="menu__price">134,99zl</p>
+                            <p class="sety__text">Філадельфія, Каліфорнія, Кіото, Тропіка, Макі авокадо.
+                            </p>
+                            <button id="wicartbutton_001" onclick="cart.addToCart(this, '001', priceList['001'])"
+                                class="corzina-btn">
+                                <svg class="cap__corzina-svg-dod">
+                                    <use class="icon-cross-dod" href="images/symbol-defs.svg#icon-cart"></use>
+                                </svg>
+                            </button>
+    
+                        </div>
+                    </article>
+    
+                </li>
+            </div>
         </div>
         <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-btn>
             <svg class="cap__svg" width="24" height="16" aria-label="перемикач мобільного вікна">
