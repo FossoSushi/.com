@@ -675,6 +675,10 @@ footer {
   justify-content: space-evenly;
 }
 
+.cart__quantity {
+  color: #fff;
+}
+
 .js-speaker-form {
   display: block;
   background: #000;
