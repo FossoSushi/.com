@@ -211,6 +211,13 @@ a {
   font-size: 15px;
 }
 
+.footer__dostava {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  color: gainsboro;
+  border-bottom: 1px solid gold;
+}
+
 /* меню */
 .rolu__img {
   display: block;
