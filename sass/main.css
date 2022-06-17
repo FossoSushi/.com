@@ -218,6 +218,13 @@ a {
   border-bottom: 1px solid gold;
 }
 
+.ulublene__link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* меню */
 .rolu__img {
   display: block;

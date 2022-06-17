@@ -202,3 +202,9 @@ a {
     color: gainsboro;
     border-bottom: 1px solid gold;
 }
+.ulublene__link {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
