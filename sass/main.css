@@ -240,8 +240,7 @@ a {
   border-bottom: 1px solid slategrey;
 }
 
-.futomaki-rolu__item:not(:last-child),
-.sety__item:not(:last-child) {
+.futomaki-rolu__item:not(:last-child) {
   border-bottom: 1px solid slategrey;
 }
 
@@ -553,8 +552,11 @@ footer {
 }
 
 .sety__list {
+  margin-top: 10px;
   display: flex;
+  justify-content: space-evenly;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .sety__title {
@@ -576,12 +578,15 @@ footer {
 }
 
 .sety__item {
+  box-shadow: 0 0 5px 5px gray;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 150px;
+  margin-bottom: 15px;
 }
-.sety__item:not(:last-child) {
-  margin-bottom: 10px;
+.sety__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
 }
 
 .ackzc__title {
