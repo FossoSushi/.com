@@ -9,6 +9,10 @@
     background-color: #000;
     padding: 5px;
 }
+.corzina-btn:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
 .icon-cross-dod {
     fill: gold;
 }
@@ -34,6 +38,7 @@
         transform: translate(-50%, -50%) scale(0.9);
     }
 }
+
 
 
 
@@ -119,4 +124,18 @@
 }
 .cart__quantity {
     color: #fff;
+}
+.cart__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cart-content__fullprice {
+    text-align: center;
+    margin: 20px 0;
+}
+.cart__quantity {
+    border-radius: 50%;
+    background-color: red;
+    padding: 0 3px;
+    font-size: 12px;
 }
