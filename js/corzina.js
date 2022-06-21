@@ -4,6 +4,7 @@ const cartProductsList = document.querySelector('.list__js');
 const cart = document.querySelector('.cart');
 const cartQuantity = document.querySelector('.cart__quantity');
 const fullPrice = document.querySelector('.fullprice');
+const cartBox = document.querySelector('.box__js');
 let price = 0;
 
 const randomId = () => {
@@ -89,7 +90,7 @@ productsBtn.forEach(el => {
 		
 		self.disabled = true;
 
-		localStorageHost();
+		sessionStorageHost();
 		
 	});
 
@@ -99,19 +100,39 @@ productsBtn.forEach(el => {
 
 cartProductsList.addEventListener('click', (e) => {
 	deleteProducts(e.target.closest('.product'));
-	localStorageHost();
+	sessionStorageHost();
 });
 
 
 
-const localStorageHost = () => {
+const sessionStorageHost = () => {
 	const parse = cartProductsList.outerHTML;
 	sessionStorage.setItem("cartProductsList", JSON.stringify(parse));
 	
 	const savedSettings = sessionStorage.getItem("cartProductsList");
 	const parsedSettings = JSON.parse(savedSettings);
-
+	
     console.log("parsedSettings", parsedSettings);
 
 
 };
+
+function ref_cart() {
+        var output = "";
+        $(".cart li").remove();
+        for (var i = 0; i < sessionStorage.length; i++) {
+            output += "<li>ID: "+sessionStorage.key(i)+" | Количество: "+sessionStorage.getItem(sessionStorage.key(i))+" <button data-pr='"+localStorage.key(i)+"' class='remove'> X </button></li>";
+        }
+        $(".cart").append(output);
+    }
+
+    // проверка совместимости
+    function web_storage() {
+      try {
+        return 'sessionStorage' in window && window['sessionStorage'] !== null;
+    } catch (e) {
+        return false;
+      }
+    }
+
+    ref_cart();
