@@ -31,19 +31,20 @@ const printFullPrice = () => {
 const printQuantity = () => {
 	let productsListLength = document.querySelector('.list__js').children.length;
 	cartQuantity.textContent = productsListLength;
-	productsListLength > 0 ? cart.classList.add('active') : cart.classList.remove('active');
-	
+	productsListLength === 0 ? cartQuantity.classList.add('un-active-qvontiti') : cartQuantity.classList.remove('un-active-qvontiti');
+
 };
+printQuantity();
 const generateCartProduct = (img, title, price, id) => {
 	return `
 		
         <li class="cart__item product" data-id="${id}">
 			<div class="cart__box">
+				<img class="image-switch__img img" src ="${img}" alt="" width="130">
 				<div>
-					<img class="image-switch__img img" src ="${img}" alt="" width="130">
-					<h2 class="cart-item__title">${title}</h2>
+				    <h2 class="cart-item__title">${title}</h2>
+					<span class="cart-product__price">${normalPrice(price)}</span>
 				</div>
-				<span class="cart-product__price">${normalPrice(price)}</span>
 				<button  type="button" class="corzina-btn__close">
 					<svg class="btn__close-svg">
 						<use class="icon-cross" href="images/symbol-defs.svg#icon-close"></use>
@@ -109,30 +110,8 @@ const localStorageHost = () => {
 	
 	const savedSettings = sessionStorage.getItem("cartProductsList");
 	const parsedSettings = JSON.parse(savedSettings);
-	
-    key = "cartProductsList";
-value = JSON.stringify(parse);
-console.log("parsedSettings", parsedSettings);
+
+    console.log("parsedSettings", parsedSettings);
 
 
-	const save = (key, value) => {
-try {
-	const serializedState = JSON.stringify(value);
-	localStorage.setItem(key, serializedState);
-} catch (error) {
-	console.error("Set state error: ", error.message);
-}
 };
-
-const load = key => {
-try {
-	const serializedState = localStorage.getItem(key);
-	return serializedState === null ? undefined : JSON.parse(serializedState);
-} catch (error) {
-	console.error("Get state error: ", error.message);
-}
-};
-
-	
-
-}

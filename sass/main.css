@@ -181,7 +181,6 @@ a {
 .hot-rolu__item,
 .maki-rolu__item,
 .rolu__item {
-  padding-top: 3px;
   box-shadow: 0 0 5px 5px grey;
   display: flex;
   justify-content: space-around;
@@ -190,10 +189,28 @@ a {
   width: 150px;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 320px) {
+  .nigiri-rolu__item,
+.futomaki-rolu__item,
+.hot-rolu__item,
+.maki-rolu__item,
+.rolu__item {
+    width: 130px;
+  }
+}
 
 .futomaki-rolu__text,
 .hot-rolu__text {
   text-align: center;
+}
+
+.image-switch__img.img {
+  width: 150px;
+}
+@media screen and (max-width: 320px) {
+  .image-switch__img.img {
+    width: 130px;
+  }
 }
 
 .menu__price {
@@ -263,7 +280,7 @@ header {
 .cap-flex {
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
 }
 
 .cap__logo {
@@ -584,14 +601,13 @@ footer {
 }
 
 .sety__item {
-  padding-top: 3px;
   box-shadow: 0 0 5px 5px gray;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   width: 150px;
   margin-bottom: 15px;
+  justify-content: space-between;
 }
 .sety__item:nth-last-child(-n+2) {
   margin-bottom: 0;
@@ -698,6 +714,7 @@ footer {
   padding: 0;
   border: none;
   background-color: #000;
+  padding: 2px 30px;
 }
 
 .modal__button {
@@ -726,7 +743,7 @@ footer {
 
 .cart__box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -764,6 +781,18 @@ footer {
   background-color: red;
   padding: 0 3px;
   font-size: 12px;
+}
+
+.cart__item {
+  box-shadow: 0 0 5px 5px grey;
+  padding-right: 10px;
+}
+.cart__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.un-active-qvontiti {
+  opacity: 0;
 }
 
 .js-speaker-form {
