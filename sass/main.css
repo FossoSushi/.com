@@ -180,7 +180,8 @@ a {
 .futomaki-rolu__item,
 .hot-rolu__item,
 .maki-rolu__item,
-.rolu__item {
+.rolu__item,
+.sety__item {
   box-shadow: 0 0 5px 5px grey;
   display: flex;
   justify-content: space-around;
@@ -194,7 +195,26 @@ a {
 .futomaki-rolu__item,
 .hot-rolu__item,
 .maki-rolu__item,
-.rolu__item {
+.rolu__item,
+.sety__item {
+    width: 130px;
+  }
+}
+.nigiri-rolu__item .image-switch__img.img,
+.futomaki-rolu__item .image-switch__img.img,
+.hot-rolu__item .image-switch__img.img,
+.maki-rolu__item .image-switch__img.img,
+.rolu__item .image-switch__img.img,
+.sety__item .image-switch__img.img {
+  width: 150px;
+}
+@media screen and (max-width: 320px) {
+  .nigiri-rolu__item .image-switch__img.img,
+.futomaki-rolu__item .image-switch__img.img,
+.hot-rolu__item .image-switch__img.img,
+.maki-rolu__item .image-switch__img.img,
+.rolu__item .image-switch__img.img,
+.sety__item .image-switch__img.img {
     width: 130px;
   }
 }
@@ -202,15 +222,6 @@ a {
 .futomaki-rolu__text,
 .hot-rolu__text {
   text-align: center;
-}
-
-.image-switch__img.img {
-  width: 150px;
-}
-@media screen and (max-width: 320px) {
-  .image-switch__img.img {
-    width: 130px;
-  }
 }
 
 .menu__price {
@@ -382,6 +393,10 @@ header {
   color: whitesmoke;
   display: flex;
   align-items: baseline;
+}
+
+.drinks__item .img {
+  height: 150px;
 }
 
 .container {
@@ -932,4 +947,9 @@ footer {
   color: aliceblue;
   margin-top: 20px;
   padding: 5px;
+}
+.form__btn-order:hover, .form__btn-order:focus {
+  background-color: gold;
+  box-shadow: 0 0 5px 5px gold;
+  border-color: honeydew;
 }/*# sourceMappingURL=main.css.map */

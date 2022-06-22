@@ -7,6 +7,8 @@ const fullPrice = document.querySelector('.fullprice');
 const cartBox = document.querySelector('.box__js');
 let price = 0;
 
+
+
 const randomId = () => {
 	return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 };
@@ -20,11 +22,11 @@ const normalPrice = (str) => {
 };
 
 const plusFullPrice = (currentPrice) => {
-	return price += currentPrice;
+	return price += Math.round(currentPrice) + 1 ;
 };
 
 const minusFullPrice = (currentPrice) => {
-	return price -= currentPrice;
+	return price -= Math.round(currentPrice) + 1;
 };
 const printFullPrice = () => {
 	fullPrice.textContent = `${normalPrice(price)} zl`;
@@ -33,6 +35,20 @@ const printQuantity = () => {
 	let productsListLength = document.querySelector('.list__js').children.length;
 	cartQuantity.textContent = productsListLength;
 	productsListLength === 0 ? cartQuantity.classList.add('un-active-qvontiti') : cartQuantity.classList.remove('un-active-qvontiti');
+
+};
+
+const sessionStorageHost = () => {
+	const parse = cartProductsList.outerHTML;
+	const savedSettings = sessionStorage.getItem("cartProductsList");
+	const parsedSettings = JSON.parse(savedSettings);
+	sessionStorage.setItem("cartProductsList", JSON.stringify(parse));
+	
+    console.log("parsedSettings", parsedSettings);
+	document.addEventListener('reload', (e) => {
+		cartBox.outerHTML = parsedSettings;
+		console.log("242t",cartBox)
+	});
 
 };
 printQuantity();
@@ -99,40 +115,8 @@ productsBtn.forEach(el => {
 });
 
 cartProductsList.addEventListener('click', (e) => {
-	deleteProducts(e.target.closest('.product'));
+	deleteProducts(e.target.closest('.product'))
 	sessionStorageHost();
 });
 
-
-
-const sessionStorageHost = () => {
-	const parse = cartProductsList.outerHTML;
-	sessionStorage.setItem("cartProductsList", JSON.stringify(parse));
-	
-	const savedSettings = sessionStorage.getItem("cartProductsList");
-	const parsedSettings = JSON.parse(savedSettings);
-	
-    console.log("parsedSettings", parsedSettings);
-
-
-};
-
-function ref_cart() {
-        var output = "";
-        $(".cart li").remove();
-        for (var i = 0; i < sessionStorage.length; i++) {
-            output += "<li>ID: "+sessionStorage.key(i)+" | Количество: "+sessionStorage.getItem(sessionStorage.key(i))+" <button data-pr='"+localStorage.key(i)+"' class='remove'> X </button></li>";
-        }
-        $(".cart").append(output);
-    }
-
-    // проверка совместимости
-    function web_storage() {
-      try {
-        return 'sessionStorage' in window && window['sessionStorage'] !== null;
-    } catch (e) {
-        return false;
-      }
-    }
-
-    ref_cart();
+sessionStorageHost();
