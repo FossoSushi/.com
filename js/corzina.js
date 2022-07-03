@@ -38,19 +38,6 @@ const printQuantity = () => {
 
 };
 
-const sessionStorageHost = () => {
-	const parse = cartProductsList.outerHTML;
-	const savedSettings = sessionStorage.getItem("cartProductsList");
-	const parsedSettings = JSON.parse(savedSettings);
-	sessionStorage.setItem("cartProductsList", JSON.stringify(parse));
-	
-    console.log("parsedSettings", parsedSettings);
-	document.addEventListener('reload', (e) => {
-		cartBox.outerHTML = parsedSettings;
-		console.log("242t",cartBox)
-	});
-
-};
 printQuantity();
 const generateCartProduct = (img, title, price, id) => {
 	return `
@@ -106,7 +93,6 @@ productsBtn.forEach(el => {
 		
 		self.disabled = true;
 
-		sessionStorageHost();
 		
 	});
 
@@ -119,4 +105,3 @@ cartProductsList.addEventListener('click', (e) => {
 	sessionStorageHost();
 });
 
-sessionStorageHost();
