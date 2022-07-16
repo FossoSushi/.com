@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/* oсновні стилі */
-/* Головний фон сторінки #FFFFFF */
+/* oсновні стилі */ /* Головний фон сторінки #FFFFFF */
 /* Головний колір тексту #212121 */
 /* Другорядний колір тексту #757575 */
 /* Фон футера #2F303A */
@@ -173,7 +172,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 20px;
 }
 
 .nigiri-rolu__item,
@@ -188,7 +186,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 150px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 @media screen and (max-width: 320px) {
   .nigiri-rolu__item,
@@ -620,12 +618,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
-  margin-bottom: 15px;
   justify-content: space-between;
 }
-.sety__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
+@media screen and (min-width: 321px) {
+  .sety__item {
+    width: 150px;
+  }
 }
 
 .ackzc__title {

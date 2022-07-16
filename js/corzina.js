@@ -102,6 +102,5 @@ productsBtn.forEach(el => {
 
 cartProductsList.addEventListener('click', (e) => {
 	deleteProducts(e.target.closest('.product'))
-	sessionStorageHost();
 });
 

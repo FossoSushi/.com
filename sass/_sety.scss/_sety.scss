@@ -39,11 +39,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
-    margin-bottom: 15px;
-    justify-content: space-between;
-    &:nth-last-child(-n + 2) {
-        margin-bottom: 0;
-
+    
+    @media screen and (min-width: 321px) {
+        width: 150px;
     }
+    justify-content: space-between;
 }
