@@ -153,6 +153,21 @@ a {
   display: none;
 }
 
+.section_tabl {
+  text-align: center;
+  border-top: 1px solid gold;
+}
+
+.table_tabl {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title_tabl {
+  font-size: 15px;
+  color: gold;
+}
+
 /* меню */
 .rolu__img {
   display: block;
