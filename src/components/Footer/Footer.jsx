@@ -49,9 +49,9 @@ const Footer = () => {
           </li>
         </ul>
         <h2>ADDRESS</h2>
-        <span className={css.cartText}>
+        <a href='https://www.google.com/maps/place/8861+63+Ave+NW,+Edmonton,+AB+T6E+0E9,+%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0/@53.4995546,-113.4677359,17z/data=!3m1!4b1!4m6!3m5!1s0x53a018bd92984281:0x14c31b875d55318!8m2!3d53.4995546!4d-113.465161!16s%2Fg%2F11c25yyvdj?entry=ttu' className={css.cartText}>
           <MapPin />  Edmonton AB, 8861 63 Ave
-        </span>
+        </a>
         <div className={css.cartBox}>
           <div><MapComponent /></div>
           
