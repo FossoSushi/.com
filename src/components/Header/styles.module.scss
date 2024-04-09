@@ -1,0 +1,37 @@
+.btnHeader {
+    padding: 24px;
+    padding-top: 18px;
+
+    .btnBox {
+        display: flex;
+        gap: 24px;
+        justify-content: right;
+        align-items: flex-end;
+
+        .btn {
+            background-color: transparent;
+            border: none;
+        }
+    }
+}
+
+.btnHeaderMenu {
+    padding: 35px 28px 35px 32px;
+    background: #DA5541;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btnBox {
+        display: flex;
+        gap: 24px;
+        justify-content: right;
+        align-items: flex-end;
+
+        .btn {
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+}

@@ -1,0 +1,20 @@
+.FilterMenu {
+    padding-top: 23px;
+    background: #103533;
+    color: #fff;
+    padding: 40px 16px 0 16px;
+
+    .filter {
+        border: 1px solid #fff;
+        height: 48px;
+    }
+
+    .deliveryTime {
+        border: 1px solid #fff;
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 21px;
+        border-radius: 4px;
+    }
+}
