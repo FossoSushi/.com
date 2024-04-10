@@ -12,19 +12,16 @@ import Order from './pages/OrderPage';
 const App = () => {
   return (
     <GlobalStateProvider>
-      <Router>
-        <div className={css.app}>
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/about" element={<AboutUs />} />
-                <Route path="/menu" element={<MenuPage />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/order" element={<Order />} />
-            </Routes>
-          </div>
-      </Router>
+      <div className={css.app}>
+          <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/menu" element={<MenuPage />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/order" element={<Order />} />
+          </Routes>
+        </div>
     </GlobalStateProvider>
-        
     );
 }
 
