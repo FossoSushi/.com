@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c63e158.css",
+    "main.js": "/static/js/main.c60d295b.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/Hero.jpg": "/static/media/Hero.22994ada5dd7da17699c.jpg",
+    "static/media/Sushi.jpg": "/static/media/Sushi.2c9c890fb219b692f8f4.jpg",
+    "index.html": "/index.html",
+    "main.1c63e158.css.map": "/static/css/main.1c63e158.css.map",
+    "main.c60d295b.js.map": "/static/js/main.c60d295b.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c63e158.css",
+    "static/js/main.c60d295b.js"
+  ]
+}

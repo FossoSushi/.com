@@ -1,5 +1,6 @@
-import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
+import ReactMapboxGl from 'react-mapbox-gl';
 
 const Map = ReactMapboxGl({
   accessToken: 'pk.eyJ1IjoibXlrb2xhMjAwMiIsImEiOiJjbHVva3J5YXQxdWw2MmtuMmtnNTJzcm5uIn0.-FTP03mPJQp7cpb4N78gJQ'
