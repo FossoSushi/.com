@@ -9,9 +9,12 @@ import { Tiktok } from '../../assets/svgComponents/Tiktok';
 import { MapPin } from '../../assets/svgComponents/MapPin';
 import { useGlobalState } from '../../GlobalStateContext/GlobalStateContext';
 import { useNavigate } from 'react-router-dom';
+import {ArrSocial} from '../../materials';
+
 
 const Modal = () => {
     const { globalState, setGlobalState } = useGlobalState();
+    const { facebook, instagram, tiktok } = ArrSocial;
     const isModalOpen = globalState.isModalOpen;
 
     const handleInnerClick = (e) => {
@@ -53,13 +56,13 @@ const Modal = () => {
                     </ul>
                     <div className={css.infoBox}>
                         <div className={css.socialBox}>
-                            <a href="">
+                            <a href={instagram}>
                                 <Instagram />
                             </a>
-                            <a href="">
+                            <a href={facebook}>
                                 <Facebook />
                             </a>
-                            <a href="">
+                            <a href={tiktok}>
                                 <Tiktok />
                             </a>
                         </div>

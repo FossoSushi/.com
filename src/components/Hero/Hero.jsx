@@ -5,7 +5,7 @@ const Hero = () => {
     return (
       <section className={css.Hero}>
         <div className={css.HeroBtnBox}>
-          <button className={css.btn}>ORDER NOW <Phone className={css.Phone} /></button>
+          <a href="tel:+18259674847" className={css.btn}>ORDER NOW <Phone className={css.Phone} /></a>
           <span className={css.text}>We speak English, <br/> Ukrainian, Polish</span>
         </div>
       </section>

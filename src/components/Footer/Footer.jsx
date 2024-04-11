@@ -6,20 +6,22 @@ import { Tiktok } from '../../assets/svgComponents/Tiktok';
 import { Mail } from '../../assets/svgComponents/Mail';
 import { MapPin } from '../../assets/svgComponents/MapPin';
 import MapComponent from '../MapComponent/MapComponent';
+import {ArrSocial} from '../../materials';
 
 const Footer = () => {
+  const { facebook, instagram, tiktok } = ArrSocial;
     return (
         <footer className={css.footer}>
         <h2 className={css.footerTitle}>CONTACTS</h2>
         <a className={css.footerTel} href="tel:+18259674847" width={24} height={24}><Phone />+1 825 967 4847</a>
         <div className={css.socialBox}>
-          <a href="">
+          <a href={instagram}>
             <Instagram />
           </a>
-          <a href="">
+          <a href={facebook}>
             <Facebook />
           </a>
-          <a href="">
+          <a href={tiktok}>
             <Tiktok />
           </a>
         </div>

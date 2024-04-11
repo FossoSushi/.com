@@ -28,6 +28,14 @@ import Tuna from './assets/img/Tuna.jpg';
 const generateUniqueId = () => {
     return uuidv4();
 };
+export const ArrSocial = {
+  facebook: 'https://www.facebook.com/profile.php?id=61556543102887&mibextid=uzlsIk',
+  instagram: 'https://www.instagram.com/fosso.sushi.studio?igsh=d2J1dnZoN2JoYnEx',
+  tiktok: 'https://www.tiktok.com/@fosso.sushi.restaurant?_t=8lRN9jihYrW&_r=1',
+}
+  
+
+
 export const ArrSETS = [
     {
       id: generateUniqueId(),
