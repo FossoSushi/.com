@@ -6,7 +6,6 @@ const MenuList = ({ title, menuList }) => {
     const newText = (text) => {
         return text.split(',').join(',\n')
     }
-    console.log(menuList.length)
     return (
         <div id={title} className={css.setsList}>
             <h2 className={css.title}>{title}</h2>
