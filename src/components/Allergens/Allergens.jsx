@@ -1,9 +1,9 @@
 import React from 'react';
 import css from './styles.module.scss';
 
-const Allergens = () => {
+const Allergens = ({id}) => {
     return (
-        <div className={css.Allergens}>
+        <div id={id} className={css.Allergens}>
             <h2 className={css.title}>Allergens</h2>
             <ul className={css.textList}>
                 <li>1. Fish (such as salmon, tuna, mackerel)</li>

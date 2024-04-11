@@ -15,11 +15,11 @@ function MenuPage() {
       <FilterMenu />
       <MenuList title={'SETS'} menuList={ArrSETS} />
       <MenuList title={'SUSHI'} menuList={ArrSushi} />
-      <MenuList title={'HOT ROLLS'} menuList={ArrHOT_ROLLS} />
-      <MenuList title={'TEMPURA ROLLS'} menuList={ArrTEMPURA_ROLLS} />
+      <MenuList title={'HOT-ROLLS'} menuList={ArrHOT_ROLLS} />
+      <MenuList title={'TEMPURA'} menuList={ArrTEMPURA_ROLLS} />
       <MenuList title={'SUSHI-BURGER'} menuList={ArrSUSHI_BURGER} />
       <MenuList title={'DRINKS'} menuList={ArrDRINKS} />
-      <Allergens />
+      <Allergens id={'ALLERGEN'} />
       <Footer />
     </>
   );

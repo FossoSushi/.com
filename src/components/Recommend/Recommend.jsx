@@ -21,7 +21,8 @@ const Recommend = () => {
                     <span className={css.prays}>80$</span>
                 </div>
                 <div className={css.byBox}>
-                    <span>(California, Bonito, Kioto....)</span><Majesticons fill='#000' />
+                            <span>(California, Bonito, Kioto....)</span>
+                            {/* <Majesticons fill='#000' /> */}
                 </div>
                 </div>
                 </li>

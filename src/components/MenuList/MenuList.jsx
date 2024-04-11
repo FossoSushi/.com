@@ -7,7 +7,7 @@ const MenuList = ({ title, menuList }) => {
         return text.split(',').join(',\n')
     }
     return (
-        <div className={css.setsList}>
+        <div id={title} className={css.setsList}>
             <h2 className={css.title}>{title}</h2>
             <ul className={css.setsUl}>
                 {menuList !== undefined && menuList.map((a, index) => {
@@ -28,7 +28,7 @@ const MenuList = ({ title, menuList }) => {
                         </div>
                         <div className={css.contentBox}>
                             <div className={css.byBox}>
-                                <p style={{ whiteSpace: 'pre-wrap' }}>{newText(description)}</p>
+                                <p style={{ whiteSpace: 'pre-wrap' }}>{description}</p>
                             </div>
                             {/* <div className={css.btnBox}>
                                 <button className={css.btn}>

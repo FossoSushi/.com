@@ -4,6 +4,7 @@ import { LogoMenu } from '../../assets/svgComponents/LogoMenu';
 import css from './styles.module.scss';
 import { useGlobalState } from '../../GlobalStateContext/GlobalStateContext';
 import { useNavigate } from 'react-router-dom';
+import { Phone } from '../../assets/svgComponents/Phone';
 
 const Header = ({type}) => {
     const { setGlobalState } = useGlobalState();
@@ -31,7 +32,9 @@ const Header = ({type}) => {
                         <EvaMenu fill={type === 'home' ? "#DA5541" : "#fff"}/>
                     </button>
                 </div>
-                
+                <a href="tel:+18259674847" className={css.btnPhone}>
+                    <Phone/>
+                </a>
             </header>
         </>
         
