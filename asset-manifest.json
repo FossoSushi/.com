@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sushi-Alberta/static/css/main.5f22f4b0.css",
-    "main.js": "/Sushi-Alberta/static/js/main.4f69f061.js",
+    "main.js": "/Sushi-Alberta/static/js/main.6d6669aa.js",
     "static/js/453.ed3810f9.chunk.js": "/Sushi-Alberta/static/js/453.ed3810f9.chunk.js",
     "static/media/Hero.jpg": "/Sushi-Alberta/static/media/Hero.22994ada5dd7da17699c.jpg",
     "static/media/Tiger.jpg": "/Sushi-Alberta/static/media/Tiger.dbfeddbceec581fc2e33.jpg",
@@ -32,11 +32,11 @@
     "index.html": "/Sushi-Alberta/index.html",
     "static/media/Down.svg": "/Sushi-Alberta/static/media/Down.804e849e82b12430abec.svg",
     "main.5f22f4b0.css.map": "/Sushi-Alberta/static/css/main.5f22f4b0.css.map",
-    "main.4f69f061.js.map": "/Sushi-Alberta/static/js/main.4f69f061.js.map",
+    "main.6d6669aa.js.map": "/Sushi-Alberta/static/js/main.6d6669aa.js.map",
     "453.ed3810f9.chunk.js.map": "/Sushi-Alberta/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f22f4b0.css",
-    "static/js/main.4f69f061.js"
+    "static/js/main.6d6669aa.js"
   ]
 }
