@@ -85,4 +85,16 @@
             }
         }
     }
+
+    .contentNullBox {
+        padding: 60px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        h2 {
+            color: #DA5541;
+            font-size: 24px;
+            font-weight: 200;
+            text-align: center;
+        }
+    }
 }

@@ -6,11 +6,12 @@ const MenuList = ({ title, menuList }) => {
     const newText = (text) => {
         return text.split(',').join(',\n')
     }
+    console.log(menuList.length)
     return (
         <div id={title} className={css.setsList}>
             <h2 className={css.title}>{title}</h2>
             <ul className={css.setsUl}>
-                {menuList !== undefined && menuList.map((a, index) => {
+                {menuList.length > 0 ? menuList.map((a, index) => {
                     const { id, name, price, description, img } = a;
                     return <li key={id} className={css.item}>
                         {img !== undefined ?
@@ -38,7 +39,11 @@ const MenuList = ({ title, menuList }) => {
                         </div>
                     </li>
                 }
-                )}
+                ) : 
+                    <div className={css.contentNullBox}>
+                        <h2>WELL BE AVAILABLE SOON!</h2>
+                    </div>
+                }
             </ul>
         </div>
         
