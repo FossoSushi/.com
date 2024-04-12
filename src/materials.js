@@ -67,6 +67,24 @@ export const ArrSETS = [
       price: '76',
       description: 'Philadephia Smell, Philadephia Mango, Gold Dragon, Samurai (32pcs.)',
     },
+    {
+      id: generateUniqueId(),
+      name: 'Sets ‘Fosso’',
+      price: '200',
+      description: 'Philadephia Classic, Philadephia Smell, Gold Dragon, Yoco, California Maki mango, Maki avocado, Tuna, Ceaser, Hot Salmon, Tempura Shrimp-Salmon, Tempura Srimp, Tempura Tuna.(100pcs.)',
+    },
+    {
+      id: generateUniqueId(),
+      name: 'SETS ‘Hot’',
+      price: '72',
+      description: 'Hot Salmon, Hot Shrimp, Hot Eel, Hot Crab.(32pcs.)',
+    },
+    {
+      id: generateUniqueId(),
+      name: 'SETS ‘Tempura’ ',
+      price: '80',
+      description: 'Tempura Salmon, Tempura Shrimp, Tempura Tuna, Tempura Ell.(32pcs.)',
+    },
   ]
 export const ArrSushi = [
     {
