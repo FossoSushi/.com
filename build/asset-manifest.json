@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sushi-Alberta/static/css/main.d3925f3b.css",
-    "main.js": "/Sushi-Alberta/static/js/main.6f655a3c.js",
+    "main.css": "/Sushi-Alberta/static/css/main.3f0a2553.css",
+    "main.js": "/Sushi-Alberta/static/js/main.5dce35dc.js",
     "static/js/453.ed3810f9.chunk.js": "/Sushi-Alberta/static/js/453.ed3810f9.chunk.js",
     "static/media/Hero.jpg": "/Sushi-Alberta/static/media/Hero.22994ada5dd7da17699c.jpg",
     "static/media/Samurai.jpg": "/Sushi-Alberta/static/media/Samurai.4b3d2b74536900f349fe.jpg",
@@ -31,12 +31,12 @@
     "static/media/OrangeJuice.jpg": "/Sushi-Alberta/static/media/OrangeJuice.41d5fe2fd5ece2ea013c.jpg",
     "index.html": "/Sushi-Alberta/index.html",
     "static/media/Down.svg": "/Sushi-Alberta/static/media/Down.804e849e82b12430abec.svg",
-    "main.d3925f3b.css.map": "/Sushi-Alberta/static/css/main.d3925f3b.css.map",
-    "main.6f655a3c.js.map": "/Sushi-Alberta/static/js/main.6f655a3c.js.map",
+    "main.3f0a2553.css.map": "/Sushi-Alberta/static/css/main.3f0a2553.css.map",
+    "main.5dce35dc.js.map": "/Sushi-Alberta/static/js/main.5dce35dc.js.map",
     "453.ed3810f9.chunk.js.map": "/Sushi-Alberta/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3925f3b.css",
-    "static/js/main.6f655a3c.js"
+    "static/css/main.3f0a2553.css",
+    "static/js/main.5dce35dc.js"
   ]
 }
