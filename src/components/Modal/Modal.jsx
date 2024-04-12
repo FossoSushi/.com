@@ -32,6 +32,19 @@ const Modal = () => {
         navigate(path);
         onClose()
     };
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+            onClose()
+        }
+    };
+
+    const handleAboutUs = () => {
+        navigate('/');
+        onClose();
+        setTimeout(() => scrollToSection('ABOUT'), 100);
+    };
     if (isModalOpen) {
         return (
             <div className={css.modalOverlay} onClick={onClose}>
@@ -49,9 +62,9 @@ const Modal = () => {
                     </div>
                     <ul className={css.menuList}>
                         <li><button onClick={() => handleNavigation('/')}>HOME</button></li>
-                        {/* <li><button onClick={() => handleNavigation('/about')}>ABOUT US</button></li> */}
+                        <li><button onClick={() => handleAboutUs()}>ABOUT US</button></li>
                         <li><button onClick={() => handleNavigation('/menu')}>MENU</button></li>
-                        {/* <li><button onClick={() => handleNavigation('/contact')}>CONTACT</button></li> */}
+                        <li><button onClick={() => scrollToSection('CONTACT')}>CONTACT</button></li>
                         {/* <li><button onClick={() => handleNavigation('/order')}>ORDER</button></li> */}
                     </ul>
                     <div className={css.infoBox}>

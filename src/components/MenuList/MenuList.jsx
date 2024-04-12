@@ -3,9 +3,6 @@ import css from './styles.module.scss';
 import { Majesticons } from '../../assets/svgComponents/Majesticons';
 
 const MenuList = ({ title, menuList }) => {
-    const newText = (text) => {
-        return text.split(',').join(',\n')
-    }
     return (
         <div id={title} className={css.setsList}>
             <h2 className={css.title}>{title}</h2>

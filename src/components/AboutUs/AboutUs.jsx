@@ -3,7 +3,7 @@ import css from './styles.module.scss';
 
 const AboutUs = () => {
     return (
-        <section className={css.ABOUT_US}>
+        <section id='ABOUT' className={css.ABOUT_US}>
             <h2 className={css.title}>ABOUT US</h2>
             <div className={css.textBox}>
             <p className={css.text}>At our sushi workshop in Edmonton, we pride ourselves on creating stunning and mouthwatering sushi dishes. Our team of Ukrainian chefs infuses every roll with passion and expertise, ensuring a delightful culinary experience for our customers.</p>

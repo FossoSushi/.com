@@ -11,7 +11,7 @@ import {ArrSocial} from '../../materials';
 const Footer = () => {
   const { facebook, instagram, tiktok } = ArrSocial;
     return (
-        <footer className={css.footer}>
+        <footer id='CONTACT' className={css.footer}>
         <h2 className={css.footerTitle}>CONTACTS</h2>
         <a className={css.footerTel} href="tel:+18259674847" width={24} height={24}><Phone />+1 825 967 4847</a>
         <div className={css.socialBox}>
