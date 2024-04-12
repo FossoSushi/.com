@@ -324,3 +324,24 @@ export const ArrDRINKS = [
 ]
   
 export const ArrSUSHI_BURGER = []
+
+export const ArrReccomended = [
+  {
+    id: generateUniqueId(),
+    name: 'SETS ‘Family’',
+    price: '100',
+    description: 'Philadephia Classic, California, Green Dragon, Maki salmon, Maki mango, Hot Salmon, Tempura Shrimp (52pcs.)',
+  },
+  {
+    id: generateUniqueId(),
+    name: 'SETS ‘Heat’',
+    price: '76',
+    description: 'Philadephia Smell, Philadephia Mango, Gold Dragon, Samurai (32pcs.)',
+  },
+  {
+    id: generateUniqueId(),
+    name: 'SETS ‘Friends’',
+    price: '145',
+    description: 'Philadephia Classic, Philadephia Smoked, Gold Dragon, Tiger, Tuna, Yoco, Maki ell, Tempura Salmon, Tempura Srimp (70pcs.)',
+  }
+]
