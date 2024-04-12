@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/Sushi-Alberta/static/css/main.bc39e3b5.css",
-    "main.js": "/Sushi-Alberta/static/js/main.5d37e1fc.js",
+    "main.css": "/Sushi-Alberta/static/css/main.2e606f96.css",
+    "main.js": "/Sushi-Alberta/static/js/main.5d928e36.js",
     "static/js/453.ed3810f9.chunk.js": "/Sushi-Alberta/static/js/453.ed3810f9.chunk.js",
     "static/media/Hero.jpg": "/Sushi-Alberta/static/media/Hero.22994ada5dd7da17699c.jpg",
+    "static/media/Samurai.jpg": "/Sushi-Alberta/static/media/Samurai.4b3d2b74536900f349fe.jpg",
+    "static/media/Tempura ELL.jpg": "/Sushi-Alberta/static/media/Tempura ELL.4997aa5e7f635472b332.jpg",
+    "static/media/Bonito.jpg": "/Sushi-Alberta/static/media/Bonito.dcb17890b586f5f8e1d9.jpg",
+    "static/media/GreenDragon.jpg": "/Sushi-Alberta/static/media/GreenDragon.919ffc9f287a93d505d0.jpg",
+    "static/media/Smoked.jpg": "/Sushi-Alberta/static/media/Smoked.4a12a9e5315d46788bf0.jpg",
     "static/media/Tiger.jpg": "/Sushi-Alberta/static/media/Tiger.dbfeddbceec581fc2e33.jpg",
     "static/media/Sushi.jpg": "/Sushi-Alberta/static/media/Sushi.2c9c890fb219b692f8f4.jpg",
-    "static/media/Samurai.jpg": "/Sushi-Alberta/static/media/Samurai.6b8494c63d6f5e6e76e7.jpg",
-    "static/media/Tempura ELL.jpg": "/Sushi-Alberta/static/media/Tempura ELL.cc4433750440c7bb4241.jpg",
     "static/media/Mango.png": "/Sushi-Alberta/static/media/Mango.d19ca616bc29aab1f67c.png",
     "static/media/California.jpg": "/Sushi-Alberta/static/media/California.34a4c48fe0336c7154da.jpg",
     "static/media/PhiladelphiaS.jpg": "/Sushi-Alberta/static/media/PhiladelphiaS.b053847eb18da254fa97.jpg",
@@ -15,12 +18,9 @@
     "static/media/Tempura Shrimp-Salmon.jpg": "/Sushi-Alberta/static/media/Tempura Shrimp-Salmon.a02e3ae88ea3dcf2bf88.jpg",
     "static/media/FutomakiSalmon.jpg": "/Sushi-Alberta/static/media/FutomakiSalmon.62ae1ada2cd25c01a840.jpg",
     "static/media/GoldDragon.jpg": "/Sushi-Alberta/static/media/GoldDragon.3e95b98763d830e83ab4.jpg",
-    "static/media/Bonito.jpg": "/Sushi-Alberta/static/media/Bonito.984f57ee2338163098c4.jpg",
     "static/media/Tempura Salmon.jpg": "/Sushi-Alberta/static/media/Tempura Salmon.4ace7c31a572bc2ecf41.jpg",
     "static/media/SmellPh.jpg": "/Sushi-Alberta/static/media/SmellPh.46e509a2e6a8f8e98f22.jpg",
     "static/media/Tuna.jpg": "/Sushi-Alberta/static/media/Tuna.9f4be993651b01a9e87d.jpg",
-    "static/media/Smoked.jpg": "/Sushi-Alberta/static/media/Smoked.7ebb8582047ac2c5824f.jpg",
-    "static/media/GreenDragon.jpg": "/Sushi-Alberta/static/media/GreenDragon.d0ad26ee5029089ac68d.jpg",
     "static/media/Makisalmon.jpg": "/Sushi-Alberta/static/media/Makisalmon.5d26faadb8dad9c73fcb.jpg",
     "static/media/Tempura Shrimp.jpg": "/Sushi-Alberta/static/media/Tempura Shrimp.0ee26933e874d971a550.jpg",
     "static/media/Makimango.jpg": "/Sushi-Alberta/static/media/Makimango.f9014f9b778b883133fe.jpg",
@@ -31,12 +31,12 @@
     "static/media/OrangeJuice.jpg": "/Sushi-Alberta/static/media/OrangeJuice.41d5fe2fd5ece2ea013c.jpg",
     "index.html": "/Sushi-Alberta/index.html",
     "static/media/Down.svg": "/Sushi-Alberta/static/media/Down.804e849e82b12430abec.svg",
-    "main.bc39e3b5.css.map": "/Sushi-Alberta/static/css/main.bc39e3b5.css.map",
-    "main.5d37e1fc.js.map": "/Sushi-Alberta/static/js/main.5d37e1fc.js.map",
+    "main.2e606f96.css.map": "/Sushi-Alberta/static/css/main.2e606f96.css.map",
+    "main.5d928e36.js.map": "/Sushi-Alberta/static/js/main.5d928e36.js.map",
     "453.ed3810f9.chunk.js.map": "/Sushi-Alberta/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc39e3b5.css",
-    "static/js/main.5d37e1fc.js"
+    "static/css/main.2e606f96.css",
+    "static/js/main.5d928e36.js"
   ]
 }
