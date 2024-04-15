@@ -58,7 +58,7 @@ export const ArrSETS = [
     {
       id: generateUniqueId(),
       name: 'SETS ‘Friends’',
-      price: '145',
+      price: '160',
       description: 'Philadephia Classic, Philadephia Smoked, Gold Dragon, Tiger, Tuna, Yoco, Maki ell, Tempura Salmon, Tempura Srimp',
     },
     {
@@ -112,7 +112,7 @@ export const ArrSushi = [
       id: generateUniqueId(),
       name: 'Philadephia Smoked',
       price: '18',
-      description: 'Rice, nori, Philadelphia cheese, mango, salmon. (8pcs)',
+      description: 'Rice, nori, Philadelphia cheese, cucumber, salmon. (8pcs)',
       img: Smoked
     },
     {
@@ -171,7 +171,7 @@ export const ArrSushi = [
      {
       id: generateUniqueId(),
       name: 'Green Dragon',
-      price: '15',
+      price: '18',
       description: 'Rice, nori, avocado, tempura shrimp, Philadelphia cheese, tobiko.(8pcs)',
       img: GreenDragon
     },
