@@ -8,17 +8,18 @@ import AboutUs from './pages/AboutUsPage';
 import Contact from './pages/ContactPage';
 import Order from './pages/OrderPage';
 
-
 const App = () => {
   return (
     <div className={css.app}>
-      <Routes>
-          <Route index element={<HomePage />} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/order" element={<Order />} />
-    </Routes>
+        </Routes>
+      </Router>
     </div>
   );
 }
