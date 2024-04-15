@@ -13,6 +13,7 @@ const App = () => {
   return (
     <GlobalStateProvider>
       <div className={css.app}>
+        <Router>
           <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutUs />} />
@@ -20,7 +21,8 @@ const App = () => {
               <Route path="/contact" element={<Contact />} />
               <Route path="/order" element={<Order />} />
           </Routes>
-        </div>
+        </Router>
+      </div>
     </GlobalStateProvider>
     );
 }
