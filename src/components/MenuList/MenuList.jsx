@@ -1,11 +1,17 @@
 import Sushi from '../../assets/img/Sushi.jpg';
 import css from './styles.module.scss';
 import { Majesticons } from '../../assets/svgComponents/Majesticons';
+import { MajesticonsOrder } from '../../assets/svgComponents/MajesticonsOrder';
+import { useNavigate } from 'react-router-dom';
 
-const MenuList = ({ title, menuList }) => {
+const MenuList = ({ type, title, menuList }) => {
+    const navigate = useNavigate();
+    const handleNavigation = (path) => {
+        navigate(path);
+    };
     return (
         <div id={title} className={css.setsList}>
-            <h2 className={css.title}>{title}</h2>
+            <h2 className={`${css.title} ${type === 'order' && css.marginNone}`}>{title}</h2>
             <ul className={css.setsUl}>
                 {menuList.length > 0 ? menuList.map((a, index) => {
                     const { id, name, price, description, img } = a;
@@ -27,15 +33,22 @@ const MenuList = ({ title, menuList }) => {
                             <div className={css.byBox}>
                                 <p style={{ whiteSpace: 'pre-wrap' }}>{description}</p>
                             </div>
-                            {/* <div className={css.btnBox}>
+                            <div className={css.btnBox}>
                                 <button className={css.btn}>
                                     <Majesticons fill='#fff' />
                                 </button>
-                            </div> */}
+                            </div>
                         </div>
                     </li>
                 }
                 ) : 
+                    type === 'order' ?
+                        <div className={css.contentOrder}>
+                            <h2>YOUR ORDER</h2>
+                            <MajesticonsOrder fill='#fff' width={100} />
+                            <p>Make an order!</p>
+                            <button onClick={() => handleNavigation('/menu')} className={css.Order}>VIEW THE MENU</button>
+                        </div> :
                     <div className={css.contentNullBox}>
                         <h2>WELL BE AVAILABLE SOON!</h2>
                     </div>

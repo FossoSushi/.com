@@ -54,7 +54,7 @@ const Modal = () => {
                             <Close />
                         </button>
                         <button onClick={() => handleNavigation('/order')} className={css.btnCor}>
-                            {/* <Majesticons fill="#fff"/> */}
+                            <Majesticons fill="#fff"/>
                         </button>
                         <button className={css.btnMenu} onClick={onClose}>
                             <EvaMenu fill="#fff"/>
