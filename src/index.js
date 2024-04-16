@@ -9,7 +9,7 @@ import { GlobalStateProvider } from './GlobalStateContext/GlobalStateContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='/Sushi-Alberta'>
+    <BrowserRouter basename='/Sushi-Edmonton'>
       {/* <Provider store={store}>
           <ThemeProvider theme={theme}> */}
       <GlobalStateProvider>
