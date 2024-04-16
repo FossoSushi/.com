@@ -359,7 +359,7 @@ export const ArrReccomended = [
   {
     id: generateUniqueId(),
     name: 'SETS ‘Friends’',
-    price: '145',
+    price: '160',
     description: 'Philadephia Classic, Philadephia Smoked, Gold Dragon, Tiger, Tuna, Yoco, Maki ell, Tempura Salmon, Tempura Srimp (70pcs.)',
   }
 ]
