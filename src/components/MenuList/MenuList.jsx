@@ -1,13 +1,30 @@
 import Sushi from '../../assets/img/Sushi.jpg';
 import css from './styles.module.scss';
 import { Majesticons } from '../../assets/svgComponents/Majesticons';
+import { Close } from '../../assets/svgComponents/Close';
 import { MajesticonsOrder } from '../../assets/svgComponents/MajesticonsOrder';
 import { useNavigate } from 'react-router-dom';
+import { useGlobalState } from '../../GlobalStateContext/GlobalStateContext';
 
 const MenuList = ({ type, title, menuList }) => {
     const navigate = useNavigate();
     const handleNavigation = (path) => {
         navigate(path);
+    };
+    const { globalState, setGlobalState } = useGlobalState();
+    const orderArr = globalState.orderArr;
+    const handleAddOrder = (e) => {
+        setGlobalState(prevState => ({
+            ...prevState,
+            orderArr: [...orderArr, e]
+        }));
+    };
+    const handleDeleteOrder = (e) => {
+        const filter = orderArr.filter(a => a.id !== e.id)
+        setGlobalState(prevState => ({
+            ...prevState,
+            orderArr: filter
+        }));
     };
     return (
         <div id={title} className={css.setsList}>
@@ -34,9 +51,23 @@ const MenuList = ({ type, title, menuList }) => {
                                 <p style={{ whiteSpace: 'pre-wrap' }}>{description}</p>
                             </div>
                             <div className={css.btnBox}>
-                                <button className={css.btn}>
-                                    <Majesticons fill='#fff' />
-                                </button>
+                                {type === 'order' ? 
+                                    <button
+                                        className={css.btnBy}
+                                        onClick={() => handleDeleteOrder(a)}
+                                    >
+                                        <Close/>
+                                    </button>:
+                                    <button
+                                        className={css.btnBy}
+                                        onClick={() => handleAddOrder(a)}
+                                        disabled={orderArr.some(item => item.id === a.id)}
+                                    >
+                                        <Majesticons fill='#fff' />
+                                    </button>
+
+                                }
+                                
                             </div>
                         </div>
                     </li>
@@ -44,7 +75,6 @@ const MenuList = ({ type, title, menuList }) => {
                 ) : 
                     type === 'order' ?
                         <div className={css.contentOrder}>
-                            <h2>YOUR ORDER</h2>
                             <MajesticonsOrder fill='#fff' width={100} />
                             <p>Make an order!</p>
                             <button onClick={() => handleNavigation('/menu')} className={css.Order}>VIEW THE MENU</button>

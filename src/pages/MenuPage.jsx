@@ -7,7 +7,9 @@ import Allergens from '../components/Allergens/Allergens';
 import FilterMenu from '../components/FilterMenu/FilterMenu';
 import {ArrSETS, ArrSushi, ArrHOT_ROLLS, ArrTEMPURA_ROLLS, ArrSUSHI_BURGER, ArrDRINKS} from '../materials'
 
+
 function MenuPage() {
+  
   return (
     <>
       <Modal />
