@@ -31,23 +31,23 @@ const Footer = () => {
         <ul className={css.workingList}>
           <li>
             <span>Tuesday</span>
-            <span>2pm.-10pm.</span>
+            <span>2pm.-9pm.</span>
           </li>
           <li>
             <span>Wednesday</span>
-            <span>2pm.-10pm.</span>
+            <span>2pm.-9pm.</span>
           </li>
           <li>
             <span>Thursday</span>
-            <span>2pm.-10pm.</span>
+            <span>2pm.-9pm.</span>
           </li>
           <li>
             <span>Friday</span>
-            <span>2pm.-10pm.</span>
+            <span>2pm.-9pm.</span>
           </li>
           <li>
             <span>Saturday</span>
-            <span>2pm.-10pm.</span>
+            <span>2pm.-9pm.</span>
           </li>
         </ul>
         <h2>ADDRESS</h2>
