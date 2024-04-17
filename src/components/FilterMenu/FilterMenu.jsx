@@ -2,9 +2,9 @@ import React, {useEffect, useRef, useState} from 'react';
 import css from './styles.module.scss';
 import { Delivery } from '../../assets/svgComponents/Delivery';
 
-const FilterMenu = ({type}) => {
+const FilterMenu = ({type, selectedOption, setSelectedOption}) => {
     const buttonRef = useRef(null);
-    const [selectedOption, setSelectedOption] = useState('DELIVERY');
+    
     const handleOptionClick = (option) => {
         setSelectedOption(option);
     };
