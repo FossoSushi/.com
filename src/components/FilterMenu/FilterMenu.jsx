@@ -1,9 +1,13 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import css from './styles.module.scss';
 import { Delivery } from '../../assets/svgComponents/Delivery';
 
 const FilterMenu = ({type}) => {
     const buttonRef = useRef(null);
+    const [selectedOption, setSelectedOption] = useState('DELIVERY');
+    const handleOptionClick = (option) => {
+        setSelectedOption(option);
+    };
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -20,7 +24,7 @@ const FilterMenu = ({type}) => {
     
     return (
         <div className={css.FilterMenu} id='DELIVERY'>
-            {type !== 'order' && 
+            {type !== 'order' ? 
                 <div className={css.Filter}>
                     <button ref={buttonRef} onClick={() => scrollToSection('DELIVERY')}><Delivery />DELIVERY</button>
                     <button onClick={() => scrollToSection('SETS')}>SETS</button>
@@ -30,6 +34,10 @@ const FilterMenu = ({type}) => {
                     <button onClick={() => scrollToSection('SUSHI-BURGER')}>SUSHI-BURGER</button>
                     <button onClick={() => scrollToSection('DRINKS')}>DRINKS</button>
                     <button onClick={() => scrollToSection('ALLERGEN')}>ALLERGEN</button>
+                </div> :
+                <div className={css.FilterDELIVERY}>
+                    <button className={`${selectedOption === 'DELIVERY' && css.FilterBtnActive}`} onClick={() => handleOptionClick('DELIVERY')}><Delivery />DELIVERY</button>
+                    <button className={`${selectedOption === 'PICKUP' && css.FilterBtnActive}`} onClick={() => handleOptionClick('PICKUP')}>PICKUP</button>
                 </div>
             }
             <div className={css.deliveryTime}>

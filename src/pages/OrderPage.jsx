@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Modal from '../components/Modal/Modal';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
@@ -7,7 +7,7 @@ import MenuList from '../components/MenuList/MenuList';
 import { useGlobalState } from '../GlobalStateContext/GlobalStateContext';
 
 const Order = () => {
-    const { globalState, setGlobalState } = useGlobalState();
+    const { globalState } = useGlobalState();
     const orderArr = globalState.orderArr;
     const title = {
         textAlign: 'center',
