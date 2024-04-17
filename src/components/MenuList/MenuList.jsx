@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Sushi from '../../assets/img/Sushi.jpg';
 import css from './styles.module.scss';
 import { Majesticons } from '../../assets/svgComponents/Majesticons';
@@ -8,15 +9,37 @@ import { useGlobalState } from '../../GlobalStateContext/GlobalStateContext';
 
 const MenuList = ({ type, title, menuList }) => {
     const navigate = useNavigate();
+    const { globalState, setGlobalState } = useGlobalState();
+    const orderArr = globalState.orderArr;
+    const increment = (a) => {
+        const index = orderArr.findIndex((item) => item.id === a.id);
+        const newOrderArr = [...orderArr];
+        newOrderArr[index] = {...newOrderArr[index], quantity: newOrderArr[index].quantity + 1 };
+
+        setGlobalState(prevState => ({
+            ...prevState,
+            orderArr: newOrderArr
+        }));
+    };
+    const decrement = (a) => {
+        if (a.quantity > 1) {
+            const newOrderArr = [...orderArr];
+            const index = orderArr.findIndex((item) => item.id === a.id);
+            newOrderArr[index] = {...newOrderArr[index], quantity: newOrderArr[index].quantity - 1 };
+
+            setGlobalState(prevState => ({
+                ...prevState,
+                orderArr: newOrderArr
+            }));
+        }
+    };
     const handleNavigation = (path) => {
         navigate(path);
     };
-    const { globalState, setGlobalState } = useGlobalState();
-    const orderArr = globalState.orderArr;
     const handleAddOrder = (e) => {
         setGlobalState(prevState => ({
             ...prevState,
-            orderArr: [...orderArr, e]
+            orderArr: [...orderArr, {...e, quantity: 1 }]
         }));
     };
     const handleDeleteOrder = (e) => {
@@ -26,6 +49,7 @@ const MenuList = ({ type, title, menuList }) => {
             orderArr: filter
         }));
     };
+
     return (
         <div id={title} className={css.setsList}>
             <h2 className={`${css.title} ${type === 'order' && css.marginNone}`}>{title}</h2>
@@ -52,12 +76,20 @@ const MenuList = ({ type, title, menuList }) => {
                             </div>
                             <div className={css.btnBox}>
                                 {type === 'order' ? 
-                                    <button
-                                        className={css.btnBy}
-                                        onClick={() => handleDeleteOrder(a)}
-                                    >
-                                        <Close/>
-                                    </button>:
+                                    <div className={css.btnOrderBox}>
+                                        <div className={css.btnPlusBox}>
+                                            <button onClick={() => increment(a)}>+</button>
+                                            <span>{a.quantity}</span>
+                                            <button onClick={() => decrement(a)}>-</button>
+                                        </div>
+                                        <button
+                                            className={css.btnBy}
+                                            onClick={() => handleDeleteOrder(a)}
+                                        >
+                                            <Close/>
+                                        </button>
+                                    </div>
+                                    :
                                     <button
                                         className={css.btnBy}
                                         onClick={() => handleAddOrder(a)}

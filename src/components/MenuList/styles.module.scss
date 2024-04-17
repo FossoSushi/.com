@@ -81,6 +81,31 @@
 
                 .btnBox {
                     display: flex;
+                    margin-top: 10px;
+
+                    .btnOrderBox {
+                        display: flex;
+                        width: 100%;
+
+                        .btnBy {
+                            margin-left: auto;
+                        }
+
+                        .btnPlusBox {
+                            background-color: #DA5541;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 10px;
+                            font-size: 20px;
+
+                            button {
+                                padding: 5px 20px;
+                                font-size: 30px;
+                                color: #fff;
+                            }
+                        }
+                    }
 
                     .btnBy {
                         margin-left: auto;

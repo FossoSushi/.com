@@ -65,7 +65,7 @@ const Modal = () => {
                         <li><button onClick={() => handleAboutUs()}>ABOUT US</button></li>
                         <li><button onClick={() => handleNavigation('/menu')}>MENU</button></li>
                         <li><button onClick={() => scrollToSection('CONTACT')}>CONTACT</button></li>
-                        {/* <li><button onClick={() => handleNavigation('/order')}>ORDER</button></li> */}
+                        <li><button onClick={() => handleNavigation('/order')}>ORDER</button></li>
                     </ul>
                     <div className={css.infoBox}>
                         <div className={css.socialBox}>

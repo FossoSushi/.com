@@ -9,9 +9,6 @@ import { useGlobalState } from '../GlobalStateContext/GlobalStateContext';
 const Order = () => {
     const { globalState, setGlobalState } = useGlobalState();
     const orderArr = globalState.orderArr;
-    useEffect(() => {
-        console.log(orderArr.length)
-    }, [orderArr])
     const title = {
         textAlign: 'center',
         marginTop: '40px',
