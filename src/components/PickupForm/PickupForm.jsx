@@ -40,18 +40,12 @@ const DeliveryForm = ({ formData, setFormData, handleSubmit }) => {
       return false;
     }
 
-    // Якщо помилок немає, очищуємо стан помилок
     setErrors({});
     return true;
   };
 
-  // Обробник відправки форми
   const handleFormSubmit = (e) => {
-    e.preventDefault();
-    
-    // Валідація форми
     if (validateForm()) {
-      // Якщо валідація пройшла успішно, викликаємо передану функцію handleSubmit
       handleSubmit(e);
     }
   };

@@ -4,17 +4,14 @@ import css from './styles.module.scss';
 const DeliveryForm = ({ formData, setFormData, handleSubmit }) => {
   const [errors, setErrors] = useState({});
 
-  // Функція для обробки зміни значення форми
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Функція для валідації форми
   const validateForm = () => {
     const newErrors = {};
 
-    // Перевірка обов'язкових полів
     if (!formData.firstName) {
       newErrors.firstName = 'First name is required';
     }
@@ -22,36 +19,27 @@ const DeliveryForm = ({ formData, setFormData, handleSubmit }) => {
     if (!formData.phoneNumber) {
       newErrors.phoneNumber = 'Phone number is required';
     } else {
-      // Перевірка формату телефонного номера (простий приклад)
       const phoneRegex = /^[0-9]{10}$/;
       if (!phoneRegex.test(formData.phoneNumber)) {
         newErrors.phoneNumber = 'Invalid phone number';
       }
     }
 
-    // Перевірка інших полів (можете додати свої вимоги до валідації)
-
-    // Якщо є помилки, повертаємо об'єкт з помилками
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       return false;
     }
 
-    // Якщо помилок немає, очищуємо стан помилок
     setErrors({});
     return true;
   };
 
-  // Обробник відправки форми
   const handleFormSubmit = (e) => {
-    e.preventDefault();
-    
-    // Валідація форми
     if (validateForm()) {
-      // Якщо валідація пройшла успішно, викликаємо передану функцію handleSubmit
-      handleSubmit();
+      handleSubmit(e);
     }
   };
+  
 
   return (
     <form className={css.form} onSubmit={handleFormSubmit}>

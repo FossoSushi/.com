@@ -8,8 +8,11 @@ import DeliveryForm from '../components/DeliveryForm/DeliveryForm';
 import PickupForm from '../components/PickupForm/PickupForm';
 import { useGlobalState } from '../GlobalStateContext/GlobalStateContext';
 import Modal from '../components/Modal/Modal';
+import emailjs from '@emailjs/browser';
 
 const Order = () => {
+    const serviceId = 'service_jp5ey5m';
+    const userId = '685QO5Je5D_QH2K8C';
     const [selectedOption, setSelectedOption] = useState('DELIVERY');
     const { globalState, setGlobalState } = useGlobalState();
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,24 +37,58 @@ const Order = () => {
     const box = {
         background: '#103533'
     };
+    const nameAndQuantityArray = orderArr.map(item => `${item.name}:(${item.quantity})pcs.`)
+    const text = nameAndQuantityArray.join('\n');
     const handleSubmitPickup = (e) => {
         e.preventDefault();
         setIsModalOpen(true);
+
+        const smsData = {
+            name: formDataPickup.firstName,
+            number: formDataPickup.phoneNumber,
+            pickingTime: formDataPickup.pickingTime,
+            allergies: formDataPickup.allergies,
+            sushi: text,
+        };
+        const templateId = 'template_1lcxxp4';
+        emailjs.send(serviceId, templateId, smsData, userId)
+            .then((response) => {
+                console.log('SMS sent successfully:', response.status);
+            })
+            .catch((error) => {
+                console.error('Error sending SMS:', error);
+            });
         setGlobalState(prevState => ({
             ...prevState,
             orderArr: []
         }));
-        console.log(formDataPickup);
+        window.scrollTo(0, 0);
     };
 
     const handleSubmitDelivery = (e) => {
         e.preventDefault();
         setIsModalOpen(true);
+        const smsData = {
+            name: formDataDelivery.firstName,
+            number: formDataDelivery.phoneNumber,
+            address: formDataDelivery.address,
+            pickingTime: formDataDelivery.deliveryTime,
+            allergies: formDataDelivery.allergies,
+            sushi: text,
+        };
+        const templateId = 'template_1lcxxp4';
+        emailjs.send(serviceId, templateId, smsData, userId)
+            .then((response) => {
+                console.log('SMS sent successfully:', response.status);
+            })
+            .catch((error) => {
+                console.error('Error sending SMS:', error);
+            });
         setGlobalState(prevState => ({
             ...prevState,
             orderArr: []
         }));
-        console.log(formDataDelivery);
+        window.scrollTo(0, 0);
     };
     
     return (
