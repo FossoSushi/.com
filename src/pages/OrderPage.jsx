@@ -13,6 +13,8 @@ import emailjs from '@emailjs/browser';
 const Order = () => {
     const serviceId = 'service_jp5ey5m';
     const userId = '685QO5Je5D_QH2K8C';
+    const botToken = '6670329183:AAFmT1iq-5X0_2Ahieq1O7qn_6m7XdYLHJE';
+    const chatId = '1461014558';
     const [selectedOption, setSelectedOption] = useState('DELIVERY');
     const { globalState, setGlobalState } = useGlobalState();
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,7 +41,7 @@ const Order = () => {
     };
     const nameAndQuantityArray = orderArr.map(item => `${item.name}:(${item.quantity})pcs.`)
     const text = nameAndQuantityArray.join('\n');
-    const handleSubmitPickup = (e) => {
+    const handleSubmitPickup = async (e) => {
         e.preventDefault();
         setIsModalOpen(true);
 
@@ -50,14 +52,31 @@ const Order = () => {
             allergies: formDataPickup.allergies,
             sushi: text,
         };
-        const templateId = 'template_1lcxxp4';
-        emailjs.send(serviceId, templateId, smsData, userId)
-            .then((response) => {
-                console.log('SMS sent successfully:', response.status);
-            })
-            .catch((error) => {
-                console.error('Error sending SMS:', error);
+        // Створіть повідомлення для відправки до Telegram
+        const message = `Name: ${smsData.name}\nNumber: ${smsData.number}\nPicking Time: ${smsData.pickingTime}\nAllergies: ${smsData.allergies}\nSushi: ${smsData.sushi}`;
+        try {
+            // Відправка HTTP-запиту до Telegram Bot API для відправки повідомлення
+            const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message,
+                }),
             });
+
+            if (response.ok) {
+                console.log('Message sent to Telegram successfully');
+            } else {
+                console.error('Error sending message to Telegram:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Error sending message to Telegram:', error);
+        }
+
+        // Скидаємо стан замовлення та прокручуємо сторінку догори
         setGlobalState(prevState => ({
             ...prevState,
             orderArr: []
@@ -65,17 +84,21 @@ const Order = () => {
         window.scrollTo(0, 0);
     };
 
-    const handleSubmitDelivery = (e) => {
+
+    const handleSubmitDelivery = async (e) => {
         e.preventDefault();
         setIsModalOpen(true);
+
         const smsData = {
             name: formDataDelivery.firstName,
             number: formDataDelivery.phoneNumber,
             address: formDataDelivery.address,
-            pickingTime: formDataDelivery.deliveryTime,
+            deliveryTime: formDataDelivery.deliveryTime,
             allergies: formDataDelivery.allergies,
             sushi: text,
         };
+
+        // Відправлення SMS
         const templateId = 'template_1lcxxp4';
         emailjs.send(serviceId, templateId, smsData, userId)
             .then((response) => {
@@ -84,12 +107,42 @@ const Order = () => {
             .catch((error) => {
                 console.error('Error sending SMS:', error);
             });
+
+        // Відправлення повідомлення у Telegram
+        const sendToTelegram = async () => {
+            const message = `Name: ${smsData.name}\nNumber: ${smsData.number}\nAddress: ${smsData.address}\nDelivery Time: ${smsData.deliveryTime}\nAllergies: ${smsData.allergies}\nSushi: ${smsData.sushi}`;
+            // Відправляємо HTTP-запит до Telegram Bot API для відправки повідомлення
+            try {
+                const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: chatId,
+                        text: message,
+                    }),
+                });
+
+                if (response.ok) {
+                    console.log('Message sent to Telegram successfully');
+                } else {
+                    console.error('Error sending message to Telegram:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error sending message to Telegram:', error);
+            }
+        };
+        // Викликаємо функцію для відправлення повідомлення у Telegram
+        await sendToTelegram();
+        // Скидаємо стан замовлення та прокручуємо сторінку догори
         setGlobalState(prevState => ({
             ...prevState,
             orderArr: []
         }));
         window.scrollTo(0, 0);
     };
+
     
     return (
         <div style={box}>
