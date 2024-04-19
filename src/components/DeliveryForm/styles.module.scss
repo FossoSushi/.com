@@ -22,11 +22,11 @@
         height: 150px;
     }
 
-    input:nth-child(-n+4) {
+    .firstName, .phoneNumber {
         height: 26px;
     }
 
-    textarea:nth-child(n+5):nth-child(-n+6) {
+    .address, .deliveryTime {
         height: 73px;
         padding: 20px;
     }

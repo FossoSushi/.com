@@ -10,6 +10,16 @@
         color: #DA5541;
     }
 
+    .errorMessage {
+        color: red;
+        position: absolute;
+        top: -18px;
+    }
+
+    .box {
+        position: relative;
+    }
+
     textarea,
     input {
         border-radius: 32px;
@@ -19,6 +29,7 @@
         font-size: 20px;
         padding: 15px;
         word-wrap: break-word;
+        width: auto;
 
     }
 
@@ -26,12 +37,11 @@
         height: 150px;
     }
 
-    input:nth-child(-n+2) {
+    .firstName,
+    .phoneNumber,
+    .pickingTime {
         height: 26px;
-    }
 
-    textarea:nth-child(-n+5) {
-        height: 26px;
     }
 }
 
