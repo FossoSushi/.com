@@ -25,9 +25,9 @@ const Header = ({type}) => {
             <header className={type === 'home' ? css.btnHeader : css.btnHeaderMenu}>
                 {type !== 'home' && <LogoMenu />}
                 <div className={css.btnBox}>
-                    {/* <button onClick={() => handleNavigation('/order')} className={css.btn}>
+                    <button onClick={() => handleNavigation('/order')} className={css.btn}>
                         <Majesticons  fill={type === 'home' ? "#DA5541" : "#fff"}/>
-                    </button> */}
+                    </button>
                     <button className={css.btn} onClick={openModal}>
                         <EvaMenu fill={type === 'home' ? "#DA5541" : "#fff"}/>
                     </button>

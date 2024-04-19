@@ -26,11 +26,11 @@ const RecommendedList = ({ recomList }) => {
                             <div className={css.byBox}>
                                 <p style={{ whiteSpace: 'pre-wrap' }}>{description}</p>
                             </div>
-                            {/* <div className={css.btnBox}>
+                            <div className={css.btnBox}>
                                 <button className={css.btn}>
                                     <Majesticons fill='#fff' />
                                 </button>
-                            </div> */}
+                            </div>
                         </div>
                     </li>
                 }

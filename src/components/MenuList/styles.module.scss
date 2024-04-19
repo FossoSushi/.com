@@ -9,6 +9,10 @@
         margin-bottom: 40px;
     }
 
+    .marginNone {
+        margin: 0;
+    }
+
     .setsUl {
         display: flex;
         flex-direction: column;
@@ -77,9 +81,38 @@
 
                 .btnBox {
                     display: flex;
+                    margin-top: 10px;
 
-                    .btn {
+                    .btnOrderBox {
+                        display: flex;
+                        width: 100%;
+
+                        .btnBy {
+                            margin-left: auto;
+                        }
+
+                        .btnPlusBox {
+                            background-color: #DA5541;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 10px;
+                            font-size: 20px;
+
+                            button {
+                                padding: 5px 20px;
+                                font-size: 30px;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .btnBy {
                         margin-left: auto;
+                    }
+
+                    .btnBy:disabled {
+                        opacity: 0.3;
                     }
                 }
 
@@ -91,6 +124,7 @@
         padding: 60px;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 24px;
+
         h2 {
             color: #DA5541;
             font-size: 24px;
@@ -98,4 +132,34 @@
             text-align: center;
         }
     }
+
+    .contentOrder {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        align-items: center;
+        padding-bottom: 100px;
+
+        p {
+            color: #DA5541;
+            font-size: 24px;
+            font-weight: 200;
+            text-align: center;
+        }
+    }
+}
+
+.Order {
+    background-color: #DA5541;
+    border: none;
+    color: #fff;
+    border-radius: 46px;
+    width: 70%;
+    height: 64px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }

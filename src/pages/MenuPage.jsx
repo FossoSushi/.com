@@ -1,16 +1,18 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
-import Modal from '../components/Modal/Modal';
+import ModalMenu from '../components/ModalMenu/ModalMenu';
 import MenuList from '../components/MenuList/MenuList';
 import Allergens from '../components/Allergens/Allergens';
 import FilterMenu from '../components/FilterMenu/FilterMenu';
 import {ArrSETS, ArrSushi, ArrHOT_ROLLS, ArrTEMPURA_ROLLS, ArrSUSHI_BURGER, ArrDRINKS} from '../materials'
 
+
 function MenuPage() {
+  
   return (
     <>
-      <Modal />
+      <ModalMenu />
       <Header />
       <FilterMenu />
       <MenuList title={'SETS'} menuList={ArrSETS} />

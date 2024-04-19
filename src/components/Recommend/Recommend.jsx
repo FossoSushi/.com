@@ -1,6 +1,5 @@
 import HeroImg from '../../assets/img/Hero.jpg';
 import css from './styles.module.scss';
-import { Majesticons } from '../../assets/svgComponents/Majesticons';
 import { useNavigate } from 'react-router-dom';
 import RecommendedList from '../RecommendedList/RecommendedList';
 import { ArrReccomended } from '../../materials'

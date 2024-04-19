@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from '../components/Modal/Modal';
+import ModalMenu from '../components/ModalMenu/ModalMenu';
 import Header from '../components/Header/Header';
 import Logo from '../components/Logo/Logo';
 import Hero from '../components/Hero/Hero';
@@ -12,7 +12,7 @@ function HomePage() {
   
   return (
     <>
-      <Modal />
+      <ModalMenu />
       <Header type={'home'} />
       <Logo />
       <Hero />
