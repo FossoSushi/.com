@@ -14,7 +14,7 @@ const Order = () => {
     const serviceId = 'service_jp5ey5m';
     const userId = '685QO5Je5D_QH2K8C';
     const botToken = '6670329183:AAFmT1iq-5X0_2Ahieq1O7qn_6m7XdYLHJE';
-    const chatId = '1461014558';
+    const chatId = '692784566';
     const [selectedOption, setSelectedOption] = useState('DELIVERY');
     const { globalState, setGlobalState } = useGlobalState();
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -87,6 +87,25 @@ const Order = () => {
 
     const handleSubmitDelivery = async (e) => {
         e.preventDefault();
+    //     fetch(`https://api.telegram.org/bot${botToken}/getUpdates`)
+    // .then(response => response.json())
+    // .then(data => {
+    //     if (data.ok) {
+    //         // Оновлення успішно отримано
+    //         const updates = data.result;
+
+    //         // Перебираємо оновлення, щоб знайти `chat_id`
+    //         updates.forEach(update => {
+    //             const chatId = update.message?.chat?.id;
+    //             console.log(`Chat ID: ${chatId}`);
+    //         });
+    //     } else {
+    //         console.error('Failed to get updates:', data.description);
+    //     }
+    // })
+    // .catch(error => {
+    //     console.error('Error:', error);
+    // });
         setIsModalOpen(true);
 
         const smsData = {
