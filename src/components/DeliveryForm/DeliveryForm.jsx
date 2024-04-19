@@ -57,27 +57,28 @@ const DeliveryForm = ({ formData, setFormData, handleSubmit }) => {
     <form className={css.form} onSubmit={handleFormSubmit}>
       <h2>DELIVERY</h2>
       <p>Fill out the form to receive delivery. Once we receive your information, we will call you within 15 minutes to confirm your order.</p>
-
-      <input
-        type="text"
-        placeholder="First Name"
-        name="firstName"
-        value={formData.firstName}
-        onChange={handleChange}
-        className={errors.firstName ? `${css.errorInput} ${css.firstName}` : css.firstName}
-      />
-      {errors.firstName && <p className={css.errorMessage}>{errors.firstName}</p>}
-
-      <input
-        type="tel"
-        name="phoneNumber"
-        placeholder="Phone Number"
-        value={formData.phoneNumber}
-        onChange={handleChange}
-        className={errors.phoneNumber ? `${css.errorInput} ${css.phoneNumber}` : css.phoneNumber}
-      />
-      {errors.phoneNumber && <p className={css.errorMessage}>{errors.phoneNumber}</p>}
-
+      <div className={css.box}>
+        {errors.firstName && <p className={css.errorMessage}>{errors.firstName}</p>}
+        <input
+          type="text"
+          placeholder="First Name"
+          name="firstName"
+          value={formData.firstName}
+          onChange={handleChange}
+          className={errors.firstName ? `${css.errorInput} ${css.firstName}` : css.firstName}
+        />
+      </div>
+      <div className={css.box}>
+        {errors.phoneNumber && <p className={css.errorMessage}>{errors.phoneNumber}</p>}
+        <input
+          type="tel"
+          name="phoneNumber"
+          placeholder="Phone Number"
+          value={formData.phoneNumber}
+          onChange={handleChange}
+          className={errors.phoneNumber ? `${css.errorInput} ${css.phoneNumber}` : css.phoneNumber}
+        />
+      </div>
       <textarea
         name="address"
         placeholder="The address to which you want to receive delivery"

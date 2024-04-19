@@ -19,15 +19,30 @@
         font-size: 20px;
         padding: 15px;
         word-wrap: break-word;
-        height: 150px;
+        height: 180px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    .firstName, .phoneNumber {
-        height: 26px;
+    .errorMessage {
+        color: red;
+        position: absolute;
+        top: -18px;
     }
 
-    .address, .deliveryTime {
-        height: 73px;
+    .box {
+        position: relative;
+        width: 100%;
+    }
+
+    .firstName,
+    .phoneNumber {
+        height: 56px;
+    }
+
+    .address,
+    .deliveryTime {
+        height: 103px;
         padding: 20px;
     }
 }

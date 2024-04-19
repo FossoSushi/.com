@@ -18,6 +18,7 @@
 
     .box {
         position: relative;
+        width: 100%;
     }
 
     textarea,
@@ -29,18 +30,18 @@
         font-size: 20px;
         padding: 15px;
         word-wrap: break-word;
-        width: auto;
-
+        width: 100%;
+        box-sizing: border-box;
     }
 
     textarea {
-        height: 150px;
+        height: 180px;
     }
 
     .firstName,
     .phoneNumber,
     .pickingTime {
-        height: 26px;
+        height: 56px;
 
     }
 }
